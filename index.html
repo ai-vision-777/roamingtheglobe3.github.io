@@ -534,16 +534,21 @@
         
             function generateDestinations() {
                 const city = document.getElementById("city-select").value;
-                let morningSpot, afternoonSpot;
+                let spots = [];
         
                 if (city === "東京") {
-                    morningSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
-                    afternoonSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                    spots = [...tokyoSpots]; // 複製東京景點列表
                 } else if (city === "大阪") {
-                    morningSpot = osakaSpots[Math.floor(Math.random() * osakaSpots.length)];
-                    afternoonSpot = osakaSpots[Math.floor(Math.random() * osakaSpots.length)];
+                    spots = [...osakaSpots]; // 複製大阪景點列表
                 }
         
+                // 隨機選擇上午和下午的景點，且不重複
+                const morningIndex = Math.floor(Math.random() * spots.length);
+                const morningSpot = spots.splice(morningIndex, 1)[0]; // 選擇並移除上午的景點
+                const afternoonIndex = Math.floor(Math.random() * spots.length);
+                const afternoonSpot = spots[afternoonIndex]; // 選擇下午的景點
+        
+                // 顯示結果
                 document.getElementById("morning-box").innerText = morningSpot;
                 document.getElementById("afternoon-box").innerText = afternoonSpot;
             }
