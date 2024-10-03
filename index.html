@@ -566,8 +566,44 @@
                 border-radius: 6px; /* 圓角略微減少 */
             }
         </style>
+
+        <script>
+                // 照片的 URL
+                const photoUrls = [
+                    "https://ai-vision-777.github.io/roamingtheglobe3.github.io/assets/img/services/%E6%97%A5%E6%9C%AC(2).jpg",
+                    "https://github.com/ai-vision-777/roamingtheglobe3.github.io/blob/main/assets/img/services/%E9%9F%93%E5%9C%8B(2).jpg?raw=true"
+                ];
+            
+                // 清空景點顯示內容
+                function clearDestinations() {
+                    document.getElementById("morning-photo").style.display = "none";
+                    document.getElementById("afternoon-photo").style.display = "none";
+                }
+            
+                // 隨機生成景點照片
+                function generatePhotos() {
+                    // 隨機選擇不同的照片 URL
+                    const morningPhotoUrl = photoUrls[Math.floor(Math.random() * photoUrls.length)];
+                    let afternoonPhotoUrl;
+                    do {
+                        afternoonPhotoUrl = photoUrls[Math.floor(Math.random() * photoUrls.length)];
+                    } while (afternoonPhotoUrl === morningPhotoUrl); // 保證下午和上午的照片不同
+            
+                    // 設置照片 URL 並顯示
+                    document.getElementById("morning-photo").src = morningPhotoUrl;
+                    document.getElementById("morning-photo").style.display = "block";
+                    
+                    document.getElementById("afternoon-photo").src = afternoonPhotoUrl;
+                    document.getElementById("afternoon-photo").style.display = "block";
+                }
+            
+                // 當頁面載入時自動清空景點顯示
+                window.onload = function() {
+                    clearDestinations();
+                };
+            </script>
                 
-      <script>
+<!--       <script>
             const tokyoSpots = [
                 "東京鐵塔", "淺草寺", "上野公園", "秋葉原", "銀座", "新宿", "澀谷", "明治神宮", "湘南海岸"
             ];
@@ -605,7 +641,7 @@
             window.onload = function() {
                 clearDestinations();
             };
-        </script>
+        </script> -->
                 
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
