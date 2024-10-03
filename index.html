@@ -570,8 +570,17 @@
                 width: 200px; /* 減小按鈕寬度 */
                 border-radius: 6px; /* 圓角略微減少 */
             }
+        
+            .photo {
+                max-width: 100%; /* 限制圖片寬度 */
+                max-height: 100%; /* 限制圖片高度 */
+                object-fit: cover; /* 確保圖片填滿容器，保持比例 */
+                display: none; /* 預設不顯示，生成後顯示 */
+                height: 250px; /* 固定顯示區域的高度 */
+                width: 100%; /* 寬度佔滿容器 */
+            }
         </style>
-
+                
         <script>
                 // 照片的 URL
                 const photoUrls = [
