@@ -594,6 +594,10 @@
                 document.getElementById("morning-box").innerText = morningSpot;
                 document.getElementById("afternoon-box").innerText = afternoonSpot;
             }
+           // 當頁面載入時自動清空景點顯示
+            window.onload = function() {
+                clearDestinations();
+            };
         </script>
                 
         <!-- Portfolio item 2 modal popup-->
