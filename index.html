@@ -558,13 +558,19 @@
             }
         </style>
                 
-        <script>
+      <script>
             const tokyoSpots = [
                 "東京鐵塔", "淺草寺", "上野公園", "秋葉原", "銀座", "新宿", "澀谷", "明治神宮", "湘南海岸"
             ];
             const osakaSpots = [
                 "環球影城", "大阪城公園", "通天閣", "大阪海洋館", "心齋橋", "梅田"
             ];
+        
+            // 清空景點顯示內容
+            function clearDestinations() {
+                document.getElementById("morning-box").innerText = "上午景點";
+                document.getElementById("afternoon-box").innerText = "下午景點";
+            }
         
             function generateDestinations() {
                 const city = document.getElementById("city-select").value;
@@ -587,6 +593,7 @@
                 document.getElementById("afternoon-box").innerText = afternoonSpot;
             }
         </script>
+                
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
