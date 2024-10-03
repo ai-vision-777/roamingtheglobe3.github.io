@@ -489,32 +489,35 @@
                                         </li>
                                     </ul-->
                                     
-                             <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
-                            <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
-                            <div class="dropdown my-3">
-                                <label for="city-select">選擇城市：</label>
-                                <select id="city-select" class="form-control">
-                                    <option value="東京">東京</option>
-                                    <option value="大阪">大阪</option>
-                                </select>
-                            </div>
-
-                            <!-- 顯示隨機景點的方框 -->
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="box bg-light p-3 border" id="morning-box">上午景點</div>
+                                 <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
+                                <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
+                                <div class="dropdown my-3">
+                                    <label for="city-select">選擇城市：</label>
+                                    <select id="city-select" class="form-control">
+                                        <option value="東京">東京</option>
+                                        <option value="大阪">大阪</option>
+                                    </select>
                                 </div>
-                                <div class="col-6">
-                                    <div class="box bg-light p-3 border" id="afternoon-box">下午景點</div>
+    
+                                <!-- 顯示隨機景點的方框，帶有背景和標籤 -->
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="label">上午景點</div>
+                                        <div class="box bg-light p-3 border yellow-background" id="morning-box">上午景點</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="label">下午景點</div>
+                                        <div class="box bg-light p-3 border yellow-background" id="afternoon-box">下午景點</div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="text-center mt-4">
-                                <button class="btn btn-primary" onclick="generateDestinations()">生成景點</button>
-                            </div>
-                            <!-- 插入的功能結束 -->
-                            <!-- 插入空白區域 -->
-                            <div class="spacer" style="height: 50px;"></div>
+    
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary" onclick="generateDestinations()">生成景點</button>
+                                </div>
+                    
+                                <!-- 插入的功能結束 -->
+                                <!-- 插入空白區域 -->
+                                <div class="spacer" style="height: 50px;"></div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         回到上一頁
