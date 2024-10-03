@@ -502,22 +502,27 @@
                                     </select>
                                 </div>
                                     
-                                <!-- 顯示隨機景點的方框，帶有背景和標籤 -->
+                               <!-- 顯示隨機照片的方框，帶有背景和標籤 -->
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="label">上午景點</div>
-                                        <div class="box bg-light p-3 border yellow-background" id="morning-box">無</div>
+                                        <div class="box bg-light p-3 border yellow-background">
+                                            <img id="morning-photo" src="" alt="上午景點" style="width: 100%; height: auto; display: none;" />
+                                        </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="label">下午景點</div>
-                                        <div class="box bg-light p-3 border yellow-background" id="afternoon-box">無</div>
+                                        <div class="box bg-light p-3 border yellow-background">
+                                            <img id="afternoon-photo" src="" alt="下午景點" style="width: 100%; height: auto; display: none;" />
+                                        </div>
                                     </div>
                                 </div>
-    
-                                <!-- 加大的生成景點按鈕 -->
+                                
+                                <!-- 調整後的生成景點按鈕 -->
                                 <div class="text-center mt-4">
-                                    <button class="btn btn-primary btn-lg generate-button" onclick="generateDestinations()">生成景點</button>
+                                    <button class="btn btn-primary btn-lg generate-button" onclick="generatePhotos()">生成景點照片</button>
                                 </div>
+
                                     
                                     <!-- 插入的功能結束 -->
                                     <!-- 插入空白區域 -->
