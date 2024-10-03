@@ -491,16 +491,18 @@
                                  <!-- 插入空白區域 -->
                                     <div class="spacer" style="height: 50px;"></div>
                                     
-                                 <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
+                                <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
                                 <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
+                                    
+                                <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
                                 <div class="dropdown my-3">
                                     <label for="city-select">選擇城市：</label>
-                                    <select id="city-select" class="form-control">
+                                    <select id="city-select" class="form-control" onchange="clearDestinations()">
                                         <option value="東京">東京</option>
                                         <option value="大阪">大阪</option>
                                     </select>
                                 </div>
-    
+                                    
                                 <!-- 顯示隨機景點的方框，帶有背景和標籤 -->
                                 <div class="row">
                                     <div class="col-6">
@@ -568,8 +570,8 @@
         
             // 清空景點顯示內容
             function clearDestinations() {
-                document.getElementById("morning-box").innerText = "上午景點";
-                document.getElementById("afternoon-box").innerText = "下午景點";
+                document.getElementById("morning-box").innerText = "無";
+                document.getElementById("afternoon-box").innerText = "無";
             }
         
             function generateDestinations() {
