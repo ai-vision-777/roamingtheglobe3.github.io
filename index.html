@@ -488,6 +488,43 @@
                                             Threads
                                         </li>
                                     </ul-->
+                                    
+                             <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
+                            <div class="dropdown my-3">
+                                <label for="city-select">選擇城市：</label>
+                                <select id="city-select" class="form-control">
+                                    <option value="東京">東京</option>
+                                    <option value="大阪">大阪</option>
+                                </select>
+                            </div>
+
+                            <!-- 顯示隨機景點的方框 -->
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="box bg-light p-3 border" id="morning-box">上午景點</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="box bg-light p-3 border" id="afternoon-box">下午景點</div>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" onclick="generateDestinations()">生成景點</button>
+                            </div>
+                            <!-- 插入的功能結束 -->
+
+                            <h3 class="text-uppercase mt-5">【日本景點必打卡】</h3>
+                            <table class="table table-striped table-hover table-bordered">
+                                <tr class="table-primary">
+                                    <th style="width: 150px;">景點</th>
+                                    <th>簡介</th>
+                                </tr>
+                                <tr>
+                                    <td>1. 東京鐵塔：</td>
+                                    <td>日本的地標建築，站在塔頂可以俯瞰東京全市，夜景更是迷人。</td>
+                                </tr>
+                                <!-- 其他景點略過 -->
+                            </table>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         回到上一頁
@@ -499,6 +536,30 @@
                 </div>
             </div>
         </div>
+        <script>
+            const tokyoSpots = [
+                "東京鐵塔", "淺草寺", "上野公園", "秋葉原", "銀座", "新宿", "澀谷", "明治神宮", "湘南海岸"
+            ];
+            const osakaSpots = [
+                "環球影城", "大阪城公園", "通天閣", "大阪海洋館", "心齋橋", "梅田"
+            ];
+        
+            function generateDestinations() {
+                const city = document.getElementById("city-select").value;
+                let morningSpot, afternoonSpot;
+        
+                if (city === "東京") {
+                    morningSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                    afternoonSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                } else if (city === "大阪") {
+                    morningSpot = osakaSpots[Math.floor(Math.random() * osakaSpots.length)];
+                    afternoonSpot = osakaSpots[Math.floor(Math.random() * osakaSpots.length)];
+                }
+        
+                document.getElementById("morning-box").innerText = morningSpot;
+                document.getElementById("afternoon-box").innerText = afternoonSpot;
+            }
+        </script>
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
