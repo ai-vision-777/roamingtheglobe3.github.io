@@ -488,6 +488,8 @@
                                             Threads
                                         </li>
                                     </ul-->
+                                 <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
                                     
                                  <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
                                 <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
@@ -515,9 +517,9 @@
                                     <button class="btn btn-primary" onclick="generateDestinations()">生成景點</button>
                                 </div>
                     
-                                <!-- 插入的功能結束 -->
-                                <!-- 插入空白區域 -->
-                                <div class="spacer" style="height: 50px;"></div>
+                                    <!-- 插入的功能結束 -->
+                                    <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         回到上一頁
@@ -530,7 +532,7 @@
             </div>
         </div>
                 
-        <!-- CSS  -->
+       <!-- CSS  -->
         <style>
             .yellow-background {
                 background-color: #f6e58d; /* 淡黃色背景 */
@@ -547,10 +549,12 @@
             }
         
             .box {
-                height: 100px;
+                min-height: 250px; /* 增加高度 */
+                width: 100%; /* 保證寬度占滿父容器 */
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                font-size: 20px;
             }
         </style>
                 
