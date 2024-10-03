@@ -507,13 +507,13 @@
                                     <div class="col-6">
                                         <div class="label">上午景點</div>
                                         <div class="box bg-light p-3 border yellow-background">
-                                            <img id="morning-photo" src="" alt="上午景點" style="width: 100%; height: auto; display: none;" />
+                                            <img id="morning-photo" src="" alt="上午景點" class="photo" />
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="label">下午景點</div>
                                         <div class="box bg-light p-3 border yellow-background">
-                                            <img id="afternoon-photo" src="" alt="下午景點" style="width: 100%; height: auto; display: none;" />
+                                            <img id="afternoon-photo" src="" alt="下午景點" class="photo" />
                                         </div>
                                     </div>
                                 </div>
@@ -539,13 +539,14 @@
             </div>
         </div>
                 
-        <!-- CSS -->
+       <!-- CSS -->
         <style>
             .yellow-background {
                 background-color: #f6e58d; /* 淡黃色背景 */
                 padding: 20px;
                 border-radius: 10px;
                 position: relative;
+                height: 250px; /* 固定背景高度 */
             }
         
             .label {
@@ -556,28 +557,17 @@
             }
         
             .box {
-                min-height: 250px; /* 增加高度 */
                 width: 100%; /* 保證寬度占滿父容器 */
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 20px;
-            }
-        
-            .generate-button {
-                padding: 12px 24px; /* 調整按鈕內邊距 */
-                font-size: 18px; /* 減少字體大小 */
-                width: 200px; /* 減小按鈕寬度 */
-                border-radius: 6px; /* 圓角略微減少 */
             }
         
             .photo {
-                max-width: 100%; /* 限制圖片寬度 */
-                max-height: 100%; /* 限制圖片高度 */
-                object-fit: cover; /* 確保圖片填滿容器，保持比例 */
+                width: 100%; /* 確保圖片寬度占滿容器 */
+                height: 100%; /* 確保圖片高度占滿容器 */
+                object-fit: cover; /* 保持圖片比例並填充容器 */
                 display: none; /* 預設不顯示，生成後顯示 */
-                height: 250px; /* 固定顯示區域的高度 */
-                width: 100%; /* 寬度佔滿容器 */
             }
         </style>
                 
