@@ -773,77 +773,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
+                                     <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
                                     <!-- 隨機生成景點的按鈕 -->
                                     <div class="text-center mt-4">
                                         <button class="btn btn-primary btn-lg generate-button" onclick="generatePhotos()">隨機生成景點</button>
                                     </div>
 
-                                    <!-- JavaScript -->
-                                    <script>
-                                        // 首爾景點的圖片資料
-                                        const seoulSpots = [
-                                            { name: "弘大", url: "https://blog.asiayo.com/wp-content/uploads/pasted-image-0-10.png" },
-                                            { name: "景福宮", url: "https://www.kkday.com/zh-tw/blog/wp-content/uploads/P1320052.jpg" },
-                                            { name: "首爾塔", url: "https://www.kkday.com/zh-tw/blog/wp-content/uploads/Korea_Seoul_N-Seoul-Tower_Ashutterstock_304517012.jpg" },
-                                            { name: "北村韓村屋", url: "https://gokorea.com.tw/wp-content/uploads/2023/03/121080204_m_normal_none.jpg" },
-                                            { name: "廣藏市場", url: "https://www.bring-you.info/wp-content/uploads/2019/02/gwangjang-market-33-900x531.jpg" },
-                                            { name: "新沙洞林蔭大道", url: "https://www.bring-you.info/wp-content/uploads/2018/11/seoul-travel-7.jpg" },
-                                            { name: "明洞", url: "https://cf.creatrip.com/original/blog/4550/dfqaeraw.jpg?d=1300x700&q=75&f=webp" },
-                                            { name: "星空圖書館", url: "https://i2.wp.com/banbi.tw/wp-content/uploads/20180304165957_42.jpg" },
-                                            { name: "梨泰院", url: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/343000/343572-Itaewon.jpg" },
-                                            { name: "青瓦台", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxUL_6VIXM9dPjRBB8bq68INSnDPI6ELMTw&s" },
-                                            { name: "梨花女子大學", url: "https://lh4.googleusercontent.com/proxy/gp0MnhyXocUpOn7BKPTD2-E_0YKK_Zk6Z9YypdPJ56Xd2ti3YvHvDpt7lJv6V-GrRpuoZaku67gKoCV7JRmZwPATUmkgJorNa-e2zHDv5kiA81oWIolFgWKlZWcr" },
-                                            { name: "樂天世界", url: "https://www.kkday.com/zh-hk/blog/wp-content/uploads/jpeg-11.jpg" },
-                                            { name: "東大門", url: "https://bobby.tw/wp-content/uploads/pixnet/707a3165baa46ae58ec09a213faf81fc.jpg" },
-                                            { name: "聖水洞", url: "https://icable-prod.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2022/08/19172751/dior.jpg" },
-                                            { name: "韓流明星街 K-Star Road", url: "https://www.hanchao.com/varimg/photogallery/Article_Photo/13134/big_233511.jpg" }
-                                        ];
-                                    
-                                        // 清空景點顯示內容
-                                        function clearDestinations() {
-                                            document.getElementById("morning-photo").style.display = "none";
-                                            document.getElementById("afternoon-photo").style.display = "none";
-                                            document.getElementById("morning-label").style.display = "none";
-                                            document.getElementById("afternoon-label").style.display = "none";
-                                        }
-                                    
-                                        // 隨機生成景點照片
-                                        function generatePhotos() {
-                                            const city = document.getElementById("city-select").value;
-                                            let spots = [];
-                                    
-                                            if (city === "首爾") {
-                                                spots = seoulSpots;
-                                            }
-                                    
-                                            if (spots.length > 0) {
-                                                // 隨機選擇不同的照片
-                                                const morningSpot = spots[Math.floor(Math.random() * spots.length)];
-                                                let afternoonSpot;
-                                                do {
-                                                    afternoonSpot = spots[Math.floor(Math.random() * spots.length)];
-                                                } while (afternoonSpot.url === morningSpot.url); // 保證下午和上午的照片不同
-                                    
-                                                // 設置照片 URL 和名稱並顯示
-                                                document.getElementById("morning-photo").src = morningSpot.url;
-                                                document.getElementById("morning-photo").style.display = "block";
-                                                document.getElementById("morning-label").innerText = morningSpot.name;
-                                                document.getElementById("morning-label").style.display = "block";
-                                                
-                                                document.getElementById("afternoon-photo").src = afternoonSpot.url;
-                                                document.getElementById("afternoon-photo").style.display = "block";
-                                                document.getElementById("afternoon-label").innerText = afternoonSpot.name;
-                                                document.getElementById("afternoon-label").style.display = "block";
-                                            }
-                                        }
-                                    
-                                        // 當頁面載入時自動清空景點顯示
-                                        window.onload = function() {
-                                            clearDestinations();
-                                        };
-                                    </script>
-                                    
+                                     <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         回到上一頁
@@ -855,6 +794,72 @@
                 </div>
             </div>
         </div>
+
+        <!-- JavaScript -->
+        <script>
+            // 首爾景點的圖片資料
+            const seoulSpots = [
+                { name: "弘大", url: "https://blog.asiayo.com/wp-content/uploads/pasted-image-0-10.png" },
+                { name: "景福宮", url: "https://www.kkday.com/zh-tw/blog/wp-content/uploads/P1320052.jpg" },
+                { name: "首爾塔", url: "https://www.kkday.com/zh-tw/blog/wp-content/uploads/Korea_Seoul_N-Seoul-Tower_Ashutterstock_304517012.jpg" },
+                { name: "北村韓村屋", url: "https://gokorea.com.tw/wp-content/uploads/2023/03/121080204_m_normal_none.jpg" },
+                { name: "廣藏市場", url: "https://www.bring-you.info/wp-content/uploads/2019/02/gwangjang-market-33-900x531.jpg" },
+                { name: "新沙洞林蔭大道", url: "https://www.bring-you.info/wp-content/uploads/2018/11/seoul-travel-7.jpg" },
+                { name: "明洞", url: "https://cf.creatrip.com/original/blog/4550/dfqaeraw.jpg?d=1300x700&q=75&f=webp" },
+                { name: "星空圖書館", url: "https://i2.wp.com/banbi.tw/wp-content/uploads/20180304165957_42.jpg" },
+                { name: "梨泰院", url: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/343000/343572-Itaewon.jpg" },
+                { name: "青瓦台", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxUL_6VIXM9dPjRBB8bq68INSnDPI6ELMTw&s" },
+                { name: "梨花女子大學", url: "https://lh4.googleusercontent.com/proxy/gp0MnhyXocUpOn7BKPTD2-E_0YKK_Zk6Z9YypdPJ56Xd2ti3YvHvDpt7lJv6V-GrRpuoZaku67gKoCV7JRmZwPATUmkgJorNa-e2zHDv5kiA81oWIolFgWKlZWcr" },
+                { name: "樂天世界", url: "https://www.kkday.com/zh-hk/blog/wp-content/uploads/jpeg-11.jpg" },
+                { name: "東大門", url: "https://bobby.tw/wp-content/uploads/pixnet/707a3165baa46ae58ec09a213faf81fc.jpg" },
+                { name: "聖水洞", url: "https://icable-prod.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2022/08/19172751/dior.jpg" },
+                { name: "韓流明星街 K-Star Road", url: "https://www.hanchao.com/varimg/photogallery/Article_Photo/13134/big_233511.jpg" }
+            ];
+        
+            // 清空景點顯示內容
+            function clearDestinations() {
+                document.getElementById("morning-photo").style.display = "none";
+                document.getElementById("afternoon-photo").style.display = "none";
+                document.getElementById("morning-label").style.display = "none";
+                document.getElementById("afternoon-label").style.display = "none";
+            }
+        
+            // 隨機生成景點照片
+            function generatePhotos() {
+                const city = document.getElementById("city-select").value;
+                let spots = [];
+        
+                if (city === "首爾") {
+                    spots = seoulSpots;
+                }
+        
+                if (spots.length > 0) {
+                    // 隨機選擇不同的照片
+                    const morningSpot = spots[Math.floor(Math.random() * spots.length)];
+                    let afternoonSpot;
+                    do {
+                        afternoonSpot = spots[Math.floor(Math.random() * spots.length)];
+                    } while (afternoonSpot.url === morningSpot.url); // 保證下午和上午的照片不同
+        
+                    // 設置照片 URL 和名稱並顯示
+                    document.getElementById("morning-photo").src = morningSpot.url;
+                    document.getElementById("morning-photo").style.display = "block";
+                    document.getElementById("morning-label").innerText = morningSpot.name;
+                    document.getElementById("morning-label").style.display = "block";
+                    
+                    document.getElementById("afternoon-photo").src = afternoonSpot.url;
+                    document.getElementById("afternoon-photo").style.display = "block";
+                    document.getElementById("afternoon-label").innerText = afternoonSpot.name;
+                    document.getElementById("afternoon-label").style.display = "block";
+                }
+            }
+        
+            // 當頁面載入時自動清空景點顯示
+            window.onload = function() {
+                clearDestinations();
+            };
+        </script>
+                
         <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
