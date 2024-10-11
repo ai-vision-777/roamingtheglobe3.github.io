@@ -502,7 +502,7 @@
                                     </select>
                                 </div>
                                     
-                               <!-- 顯示隨機照片的方框，帶有背景和標籤 -->
+                                <!-- 固定大小的照片展示區域 -->
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="label">上午景點</div>
@@ -548,7 +548,14 @@
                 padding: 20px;
                 border-radius: 10px;
                 position: relative;
-                height: auto; /* 自適應高度 */
+                width: 100%; /* 容器寬度 */
+                max-width: 350px; /* 最大寬度，適應不同屏幕 */
+                height: 400px; /* 固定高度，防止隨內容變動 */
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* 垂直居中 */
+                align-items: center; /* 水平居中 */
+                margin: auto; /* 保證在大容器中居中顯示 */
             }
         
             .label {
@@ -559,21 +566,19 @@
             }
         
             .box {
-                width: 100%; /* 保證寬度占滿父容器 */
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column; /* 垂直排列圖片和標籤 */
-                margin-bottom: 20px; /* 增加下方距離 */
+                width: 100%; /* 保證寬度占滿父容器 */
+                height: 100%; /* 保持容器高度固定 */
             }
         
             .photo {
                 width: 100%; /* 確保圖片寬度占滿容器 */
-                height: auto; /* 自適應高度 */
-                max-height: 300px; /* 限制圖片的最大高度 */
+                height: 70%; /* 圖片高度固定為容器的70% */
                 object-fit: cover; /* 保持圖片比例並填充容器 */
                 border-radius: 8px; /* 為圖片添加圓角 */
-                margin-bottom: 10px; /* 圖片與名稱之間的距離 */
             }
         
             .photo-label {
@@ -581,6 +586,7 @@
                 font-weight: bold; /* 設置字體粗體 */
                 text-align: center;
                 margin-top: 10px;
+                width: 100%; /* 保證標籤的寬度與容器一致 */
             }
         </style>
                 
