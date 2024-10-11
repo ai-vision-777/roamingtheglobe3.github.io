@@ -541,7 +541,7 @@
             </div>
         </div>
                 
-       <!-- CSS -->
+        <!-- CSS -->
         <style>
             .yellow-background {
                 background-color: #f6e58d; /* 淡黃色背景 */
@@ -563,12 +563,21 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column; /* 垂直排列圖片和標籤 */
             }
         
             .photo {
                 width: 100%; /* 確保圖片寬度占滿容器 */
                 height: 100%; /* 確保圖片高度占滿容器 */
                 object-fit: cover; /* 保持圖片比例並填充容器 */
+                display: none; /* 預設不顯示，生成後顯示 */
+            }
+        
+            .photo-label {
+                font-size: 16px;
+                font-weight: bold; /* 設置字體粗體 */
+                text-align: center;
+                margin-top: 10px;
                 display: none; /* 預設不顯示，生成後顯示 */
             }
         </style>
