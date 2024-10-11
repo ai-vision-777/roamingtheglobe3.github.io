@@ -508,19 +508,21 @@
                                         <div class="label">上午景點</div>
                                         <div class="box bg-light p-3 border yellow-background">
                                             <img id="morning-photo" src="" alt="上午景點" class="photo" />
+                                            <div id="morning-label" class="photo-label"></div>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="label">下午景點</div>
                                         <div class="box bg-light p-3 border yellow-background">
                                             <img id="afternoon-photo" src="" alt="下午景點" class="photo" />
+                                            <div id="afternoon-label" class="photo-label"></div>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <!-- 調整後的生成景點按鈕 -->
+                                <!-- 調整後的隨機生成景點按鈕 -->
                                 <div class="text-center mt-4">
-                                    <button class="btn btn-primary btn-lg generate-button" onclick="generatePhotos()">生成景點照片</button>
+                                    <button class="btn btn-primary btn-lg generate-button" onclick="generatePhotos()">隨機生成景點</button>
                                 </div>
 
                                     
@@ -574,71 +576,64 @@
         <script>
             // 東京景點的圖片資料
             const tokyoSpots = [
-                {
-                    name: "東京鐵塔",
-                    url: "https://image.cdn-eztravel.com.tw/uz5KtlA2k7OmPkWmc0Y-ZWvKJ-P2yIBgz_X9OoFICls/g:ce/aHR0cDovL3ZhY2F0aW9uLmNkbi1lenRyYXZlbC5jb20udHcvcG9pL2pwL1RZTy9Ub2t5byBUb3dlci9zaHV0dGVyc3RvY2tfMTI5NjExMjI1X1I2MDAuanBn.jpg"
-                },
-                {
-                    name: "淺草寺",
-                    url: "https://images.pexels.com/photos/6493197/pexels-photo-6493197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                },
-                {
-                    name: "上野公園",
-                    url: "https://s3-ap-northeast-1.amazonaws.com/thegate/2020/12/03/13/02/33/Ueno%20park.jpg"
-                },
-                {
-                    name: "秋葉原",
-                    url: "https://prd-static.gltjp.com/glt/data/article/21000/20306/20230428_135124_b546c095_w1920.webp"
-                },
-                {
-                    name: "銀座",
-                    url: "https://prd-static.gltjp.com/glt/data/article/21000/20273/20230212_104730_44fb136a_w1920.webp"
-                },
-                {
-                    name: "新宿",
-                    url: "https://mimihan.tw/wp-content/uploads/20240109112501_0.jpg"
-                },
-                {
-                    name: "澀谷",
-                    url: "https://prd-static.gltjp.com/glt/data/article/21000/20511/20231107_090403_c364e3e1_w1920.webp"
-                },
-                {
-                    name: "明治神宮",
-                    url: "https://live.staticflickr.com/7176/7048008687_2329b3814a_b.jpg"
-                },
-                {
-                    name: "湘南海岸",
-                    url: "https://tenjo.tw/wp-content/uploads/JAP_0876.jpg"
-                }
+                { name: "東京鐵塔", url: "https://image.cdn-eztravel.com.tw/uz5KtlA2k7OmPkWmc0Y-ZWvKJ-P2yIBgz_X9OoFICls/g:ce/aHR0cDovL3ZhY2F0aW9uLmNkbi1lenRyYXZlbC5jb20udHcvcG9pL2pwL1RZTy9Ub2t5byBUb3dlci9zaHV0dGVyc3RvY2tfMTI5NjExMjI1X1I2MDAuanBn.jpg" },
+                { name: "淺草寺", url: "https://images.pexels.com/photos/6493197/pexels-photo-6493197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+                { name: "上野公園", url: "https://s3-ap-northeast-1.amazonaws.com/thegate/2020/12/03/13/02/33/Ueno%20park.jpg" },
+                { name: "秋葉原", url: "https://prd-static.gltjp.com/glt/data/article/21000/20306/20230428_135124_b546c095_w1920.webp" },
+                { name: "銀座", url: "https://prd-static.gltjp.com/glt/data/article/21000/20273/20230212_104730_44fb136a_w1920.webp" },
+                { name: "新宿", url: "https://mimihan.tw/wp-content/uploads/20240109112501_0.jpg" },
+                { name: "澀谷", url: "https://prd-static.gltjp.com/glt/data/article/21000/20511/20231107_090403_c364e3e1_w1920.webp" },
+                { name: "明治神宮", url: "https://live.staticflickr.com/7176/7048008687_2329b3814a_b.jpg" },
+                { name: "湘南海岸", url: "https://tenjo.tw/wp-content/uploads/JAP_0876.jpg" }
+            ];
+        
+            // 大阪景點的圖片資料
+            const osakaSpots = [
+                { name: "環球影城", url: "https://www.hotelscombined.com.tw/news/wp-content/uploads/sites/316/2018/10/1-1.jpg" },
+                { name: "大阪城公園", url: "https://www.kkday.com/zh-my/blog/wp-content/uploads/%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%98%AA%E5%9F%8E%E5%85%AC%E5%9B%AD5.jpg" },
+                { name: "通天閣", url: "https://chictirpstorageprod.blob.core.windows.net/poi/c12a0b94-529e-4012-9832-54151e73fdeb.jpg" },
+                { name: "大阪海洋館", url: "https://www.e-japannavi.com/syuyu/osaka/images/bayarea_kaiyukan_img700465_01.jpg" },
+                { name: "心齋橋", url: "https://www.funtime.com.tw/blog/wp-content/uploads/2020/09/413.jpg" },
+                { name: "梅田", url: "https://resources.matcha-jp.com/resize/720x2000/2024/02/27-169315.webp" }
             ];
         
             // 清空景點顯示內容
             function clearDestinations() {
                 document.getElementById("morning-photo").style.display = "none";
                 document.getElementById("afternoon-photo").style.display = "none";
+                document.getElementById("morning-label").style.display = "none";
+                document.getElementById("afternoon-label").style.display = "none";
             }
         
             // 隨機生成景點照片
             function generatePhotos() {
                 const city = document.getElementById("city-select").value;
+                let spots = [];
         
                 if (city === "東京") {
-                    // 隨機選擇不同的東京照片
-                    const morningSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                    spots = tokyoSpots;
+                } else if (city === "大阪") {
+                    spots = osakaSpots;
+                }
+        
+                if (spots.length > 0) {
+                    // 隨機選擇不同的照片
+                    const morningSpot = spots[Math.floor(Math.random() * spots.length)];
                     let afternoonSpot;
                     do {
-                        afternoonSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                        afternoonSpot = spots[Math.floor(Math.random() * spots.length)];
                     } while (afternoonSpot.url === morningSpot.url); // 保證下午和上午的照片不同
         
-                    // 設置照片 URL 並顯示
+                    // 設置照片 URL 和名稱並顯示
                     document.getElementById("morning-photo").src = morningSpot.url;
                     document.getElementById("morning-photo").style.display = "block";
+                    document.getElementById("morning-label").innerText = morningSpot.name;
+                    document.getElementById("morning-label").style.display = "block";
                     
                     document.getElementById("afternoon-photo").src = afternoonSpot.url;
                     document.getElementById("afternoon-photo").style.display = "block";
-                } else {
-                    // 處理大阪的情況
-                    alert("目前僅提供東京的景點圖片顯示");
+                    document.getElementById("afternoon-label").innerText = afternoonSpot.name;
+                    document.getElementById("afternoon-label").style.display = "block";
                 }
             }
         
@@ -648,46 +643,7 @@
             };
         </script>
                 
-<!--       <script>
-            const tokyoSpots = [
-                "東京鐵塔", "淺草寺", "上野公園", "秋葉原", "銀座", "新宿", "澀谷", "明治神宮", "湘南海岸"
-            ];
-            const osakaSpots = [
-                "環球影城", "大阪城公園", "通天閣", "大阪海洋館", "心齋橋", "梅田"
-            ];
-        
-            // 清空景點顯示內容
-            function clearDestinations() {
-                document.getElementById("morning-box").innerText = "無";
-                document.getElementById("afternoon-box").innerText = "無";
-            }
-        
-            function generateDestinations() {
-                const city = document.getElementById("city-select").value;
-                let spots = [];
-        
-                if (city === "東京") {
-                    spots = [...tokyoSpots]; // 複製東京景點列表
-                } else if (city === "大阪") {
-                    spots = [...osakaSpots]; // 複製大阪景點列表
-                }
-        
-                // 隨機選擇上午和下午的景點，且不重複
-                const morningIndex = Math.floor(Math.random() * spots.length);
-                const morningSpot = spots.splice(morningIndex, 1)[0]; // 選擇並移除上午的景點
-                const afternoonIndex = Math.floor(Math.random() * spots.length);
-                const afternoonSpot = spots[afternoonIndex]; // 選擇下午的景點
-        
-                // 顯示結果
-                document.getElementById("morning-box").innerText = morningSpot;
-                document.getElementById("afternoon-box").innerText = afternoonSpot;
-            }
-           // 當頁面載入時自動清空景點顯示
-            window.onload = function() {
-                clearDestinations();
-            };
-        </script> -->
-                
+  
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
