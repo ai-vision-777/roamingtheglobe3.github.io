@@ -572,42 +572,81 @@
         </style>
                 
         <script>
-                // 照片的 URL
-                const photoUrls = [
-                    "https://ai-vision-777.github.io/roamingtheglobe3.github.io/assets/img/services/%E6%97%A5%E6%9C%AC(2).jpg",
-                    "https://github.com/ai-vision-777/roamingtheglobe3.github.io/blob/main/assets/img/services/%E9%9F%93%E5%9C%8B(2).jpg?raw=true",
-                    "https://prd-static.gltjp.com/glt/data/article/13000/12052/20191110_220429_a19d59a4_w1920.webp",
-                    "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/04/a0004438/img/basic/a0004438_main.png"
-                ];
-            
-                // 清空景點顯示內容
-                function clearDestinations() {
-                    document.getElementById("morning-photo").style.display = "none";
-                    document.getElementById("afternoon-photo").style.display = "none";
+            // 東京景點的圖片資料
+            const tokyoSpots = [
+                {
+                    name: "東京鐵塔",
+                    url: "https://image.cdn-eztravel.com.tw/uz5KtlA2k7OmPkWmc0Y-ZWvKJ-P2yIBgz_X9OoFICls/g:ce/aHR0cDovL3ZhY2F0aW9uLmNkbi1lenRyYXZlbC5jb20udHcvcG9pL2pwL1RZTy9Ub2t5byBUb3dlci9zaHV0dGVyc3RvY2tfMTI5NjExMjI1X1I2MDAuanBn.jpg"
+                },
+                {
+                    name: "淺草寺",
+                    url: "https://images.pexels.com/photos/6493197/pexels-photo-6493197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                },
+                {
+                    name: "上野公園",
+                    url: "https://s3-ap-northeast-1.amazonaws.com/thegate/2020/12/03/13/02/33/Ueno%20park.jpg"
+                },
+                {
+                    name: "秋葉原",
+                    url: "https://prd-static.gltjp.com/glt/data/article/21000/20306/20230428_135124_b546c095_w1920.webp"
+                },
+                {
+                    name: "銀座",
+                    url: "https://prd-static.gltjp.com/glt/data/article/21000/20273/20230212_104730_44fb136a_w1920.webp"
+                },
+                {
+                    name: "新宿",
+                    url: "https://mimihan.tw/wp-content/uploads/20240109112501_0.jpg"
+                },
+                {
+                    name: "澀谷",
+                    url: "https://prd-static.gltjp.com/glt/data/article/21000/20511/20231107_090403_c364e3e1_w1920.webp"
+                },
+                {
+                    name: "明治神宮",
+                    url: "https://live.staticflickr.com/7176/7048008687_2329b3814a_b.jpg"
+                },
+                {
+                    name: "湘南海岸",
+                    url: "https://tenjo.tw/wp-content/uploads/JAP_0876.jpg"
                 }
-            
-                // 隨機生成景點照片
-                function generatePhotos() {
-                    // 隨機選擇不同的照片 URL
-                    const morningPhotoUrl = photoUrls[Math.floor(Math.random() * photoUrls.length)];
-                    let afternoonPhotoUrl;
+            ];
+        
+            // 清空景點顯示內容
+            function clearDestinations() {
+                document.getElementById("morning-photo").style.display = "none";
+                document.getElementById("afternoon-photo").style.display = "none";
+            }
+        
+            // 隨機生成景點照片
+            function generatePhotos() {
+                const city = document.getElementById("city-select").value;
+        
+                if (city === "東京") {
+                    // 隨機選擇不同的東京照片
+                    const morningSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                    let afternoonSpot;
                     do {
-                        afternoonPhotoUrl = photoUrls[Math.floor(Math.random() * photoUrls.length)];
-                    } while (afternoonPhotoUrl === morningPhotoUrl); // 保證下午和上午的照片不同
-            
+                        afternoonSpot = tokyoSpots[Math.floor(Math.random() * tokyoSpots.length)];
+                    } while (afternoonSpot.url === morningSpot.url); // 保證下午和上午的照片不同
+        
                     // 設置照片 URL 並顯示
-                    document.getElementById("morning-photo").src = morningPhotoUrl;
+                    document.getElementById("morning-photo").src = morningSpot.url;
                     document.getElementById("morning-photo").style.display = "block";
                     
-                    document.getElementById("afternoon-photo").src = afternoonPhotoUrl;
+                    document.getElementById("afternoon-photo").src = afternoonSpot.url;
                     document.getElementById("afternoon-photo").style.display = "block";
+                } else {
+                    // 處理大阪的情況
+                    alert("目前僅提供東京的景點圖片顯示");
                 }
-            
-                // 當頁面載入時自動清空景點顯示
-                window.onload = function() {
-                    clearDestinations();
-                };
-            </script>
+            }
+        
+            // 當頁面載入時自動清空景點顯示
+            window.onload = function() {
+                clearDestinations();
+            };
+        </script>
                 
 <!--       <script>
             const tokyoSpots = [
