@@ -548,7 +548,7 @@
                 padding: 20px;
                 border-radius: 10px;
                 position: relative;
-                height: 250px; /* 固定背景高度 */
+                height: auto; /* 自適應高度 */
             }
         
             .label {
@@ -564,13 +564,16 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column; /* 垂直排列圖片和標籤 */
+                margin-bottom: 20px; /* 增加下方距離 */
             }
         
             .photo {
                 width: 100%; /* 確保圖片寬度占滿容器 */
-                height: 100%; /* 確保圖片高度占滿容器 */
+                height: auto; /* 自適應高度 */
+                max-height: 300px; /* 限制圖片的最大高度 */
                 object-fit: cover; /* 保持圖片比例並填充容器 */
-                display: none; /* 預設不顯示，生成後顯示 */
+                border-radius: 8px; /* 為圖片添加圓角 */
+                margin-bottom: 10px; /* 圖片與名稱之間的距離 */
             }
         
             .photo-label {
@@ -578,7 +581,6 @@
                 font-weight: bold; /* 設置字體粗體 */
                 text-align: center;
                 margin-top: 10px;
-                display: none; /* 預設不顯示，生成後顯示 */
             }
         </style>
                 
