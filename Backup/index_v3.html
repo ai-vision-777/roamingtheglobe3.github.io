@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Roaming The Globe</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="my_styles.css" rel="stylesheet" />
+            <script>
+        const locations = [
+            "東京鐵塔",
+            "淺草寺",
+            "上野公園",
+            "秋葉原",
+            "銀座",
+            "新宿",
+            "澀谷",
+            "明治神宮",
+            "湘南海岸"
+        ];
+    
+        function displayRandomLocation() {
+            const randomIndex = Math.floor(Math.random() * locations.length);
+            document.getElementById("random-location").innerText = locations[randomIndex];
+        }
+    
+        window.onload = displayRandomLocation;
+</script>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">首頁</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    目錄
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">探索寰宇</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#videos">影片專區</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">關於我們</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">團隊成員</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">探險諮詢站</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div>
+                    <h3>推薦旅遊地點: <span id="random-location"></span></h3>
+                </div>
+                <div class="masthead-subheading">迎接畢業之旅的新冒險</div>
+                <div class="masthead-heading text-uppercase">一起打造屬於你的畢業紀念！</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#projects">繼續探索</a>
+            </div>
+        </header>
+         <!-- 新加的-->
+         <section class="projects-section bg-light" id="projects" >
+            <div class="container px-4 px-lg-5 mt-5">
+                <!-- Featured Project Row-->
+                <section class="projects-section bg-light" id="projects" style="min-height: 800px;">
+                    <div class="container px-4 px-lg-5">
+                        <!-- Featured Project Row-->
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/主視覺.jpg" alt="..." /></div>
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="featured-text text-center text-lg-left">
+                            <h4>一起留下最難忘的回憶!</h4>
+                            <p class="text-black-50 mb-0">當歡笑和友情交織在一起，我們的大學生活變得更加精彩！讓我們放下壓力，放肆地追逐夢想，讓每個瞬間都充滿歡樂和感動。無論我們走到哪裡，我們的笑聲將成為最美的風景，讓我們一起締造屬於我們的不可思議的回憶吧！</p>
+                        </div>
+                    </div>
+                </div>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">探索寰宇</h2>
+                    <h3 class="section-subheading text-muted">踏上寰宇探險之旅，尋找未知的驚喜</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/services/日本.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">日本</div>
+                                <div class="portfolio-caption-subheading text-muted">Japan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/services/韓國.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">韓國</div>
+                                <div class="portfolio-caption-subheading text-muted">South Korea</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/services/泰國.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">泰國</div>
+                                <div class="portfolio-caption-subheading text-muted">Thailand</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/services/美國.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">美國</div>
+                                <div class="portfolio-caption-subheading text-muted">USA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/services/法國.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">法國</div>
+                                <div class="portfolio-caption-subheading text-muted">France</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/services/義大利.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">義大利</div>
+                                <div class="portfolio-caption-subheading text-muted">Italy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="videos">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">影片專區</h2>
+                    <h3 class="section-subheading text-muted">短影音放在IG、TikTok也要去看看喔!
+                    </h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <iframe width="280" height="157" src="https://www.youtube.com/embed/Vq6IuRLoMbo?si=msyVD8EC1Hgpgs_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h4 class="my-3">影片1</h4>
+                        <p class="text-muted">每個場景都散發著獨特的魅力。讓我們一起踏上旅程，探索這個多姿多彩的世界 </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-video fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">影片2</h4>
+                        <p class="text-muted">影片2介紹</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-video fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">影片3</h4>
+                        <p class="text-muted">影片3介紹</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">關於我們</h2>
+                    <h3 class="section-subheading text-muted">加入我們，讓我們一起啟程，探索遠方之夢！</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/聚集.jpg" alt="聚集" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2024/03/06</h4>
+                                <h4 class="subheading">萌芽之初</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">我們的團隊因為對旅遊的熱愛而匯聚在一起，這種熱情促使我們決定將我們的愛好轉化為一個共同的使命。我們相信，旅行不僅僅是探索新的地方，更是擴展心靈、豐富生活的方式。因此，我們致力於為旅行者提供最全面、最豐富的旅遊資訊和體驗，希望能夠激勵更多的人走出家門，探索這個美麗多彩的世界。
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/展覽.png" alt="中途" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2024/10-2024/12</h4>
+                                <h4 class="subheading">中途之旅</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">我們已經踏上了行動的道路，將在10月15日至10月17日舉行的校內展，以及在松菸12月13日至12月15日的校外展，透過這些展覽，我們將與大眾分享我們對旅遊的熱愛，並提供精彩紛呈的旅遊體驗。我們期待著在展覽中與您相見，共同探索旅遊的美妙世界!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/遠方.jpg" alt="遠方之夢" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2024/12後</h4>
+                                <h4 class="subheading">遠方之夢</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">在後期階段，我們將持續進行滾動式的內容修正，以確保我們的資訊和服務始終保持最新、最準確，以提供更好的使用體驗。
+                                無論您是一位冒險家、文化愛好者還是美食探險家，我們的程式將幫助您發現令人驚嘆的旅遊目的地和體驗，並為您的旅程增添更多樂趣和意義。敬請期待，讓我們一起創造更美好的旅行未來！
+                            </p></div>
+                        </div>
+                    </li>
+                    <!--li class="timeline-inverted">留著備用
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2020</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li-->
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">團隊成員</h2>
+                    <h3 class="section-subheading text-muted">我們是一群充滿熱情和專業的團隊成員，致力於為您提供難忘的旅程體驗</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/連.jpg" alt="連大維" />
+                            <h4>連大維</h4>
+                            <p class="text-muted">UI/UX設計師</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/mr.david_0205/" aria-label="連大維的IG"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100003893675169&locale=zh_TW" aria-label="連大維的FB"><i class="fab fa-facebook-f"></i></a>
+                            <!--a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fa-solid fa-envelope"></i><信箱留著備用/a-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/張.jpg" alt="張箕聖" />
+                            <h4>張箕聖</h4>
+                            <p class="text-muted">PM專案經理</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/____shennnnn/" aria-label="張箕聖的IG"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100009314185079&locale=zh_TW" aria-label="張箕聖的FB"><i class="fab fa-facebook-f"></i></a>
+                            <!--a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/張思妍.jpg" alt="張思妍" />
+                            <h4>張思妍</h4>
+                            <p class="text-muted">程式工程師
+                                <br>(因個人因素離開)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/KID.jpg" alt="林弘森" />
+                            <h4>林弘森</h4>
+                            <p class="text-muted">視覺設計師</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/kid_520/" aria-label="x林弘森的IG"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/安.jpg" alt="Anuka" />
+                            <h4>Anuka</h4>
+                            <p class="text-muted">社群行銷經理</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/anukaa009/" aria-label="安諾的IG"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">將竭盡全力為您打造一段難忘的旅程，讓您的旅行變得更加輕鬆愉快！</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <!--div class="py-5" 圖標超連結>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div-->
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container mt-5">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">探險諮詢站</h2>
+                    <h3 class="section-subheading text-white">可以在各大社群平台找到我們！</h3>
+                    <div class="row text-secondary">
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="https://www.youtube.com/@RoamingtheGlobe-2024/featured" target="_blank">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                          <a class="btn btn-dark" href="https://www.instagram.com/roamingtheglobe_2024/"     target="_blank">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa-brands fa-instagram fa-stack-1x fa-inverse "></i>
+                            </span>
+                          </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-dark" href="">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa-brands fa-tiktok fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                        <div class="text-white notransform h4 mt-5">如有任何事宜需與我們聯繫
+                            <br>可以透過Instagram找尋我們
+                    </div>
+                </div>
+               
+        <!-- Footer-->
+       
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">日本</h2>
+                                    <p class="item-intro text-muted">Japan</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/services/日本(2).jpg" alt="..." />
+                                    <p>日本作為一個融合古老與現代的國家，提供了無數讓大學生驚艷的都市探險。從東京的繁華都市風情到大阪的美食天堂，每一個城市都散發著令人著迷的魅力。大學生們可以探索東京塔的霓虹燈海洋，漫步於澀谷的時尚街區，或是品嚐大阪的獨特美食文化。此外，他們還能夠體驗現代科技的奇幻世界，探索京都的歷史遺跡，以及感受神戶的國際化氛圍。在這個充滿活力的國家裡，大學生們將會度過一段充滿探險與驚喜的都市之旅。</p>
+                                    <h3 class="text-uppercase ">【日本景點必打卡】</h3>
+                                    <table class="table table-striped table-hover table-bordered">
+                                        <tr class="table-primary">
+                                            <th style="width: 150px;">景點</th>
+                                            <th>簡介</th>
+                                        <tr>
+                                            <td>1. 東京鐵塔：</td>
+                                            <td>日本的地標建築，站在塔頂可以俯瞰東京全市，夜景更是迷人。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. 淺草寺：</td>
+                                            <td>東京最著名、最古老的寺廟，周圍有雷門、五重塔等古蹟，還可以逛仲見世商店街，寺內可以求籤。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. 上野公園：</td>
+                                            <td>保留了江戶時代以來的日本園林風情，很有日本味道和文化內涵的公園，著名賞櫻地。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. 秋葉原：</td>
+                                            <td>動漫愛好者的天堂，也是買電器的好地方，還有女僕咖啡這樣的日本特色。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. 銀座：</td>
+                                            <td>遍布著高檔的購物中心，各種品牌和餐廳，也是文化藝術的據點，擁有豐富的劇院、畫廊和音樂廳。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. 新宿：</td>
+                                            <td>這個區域有許多知名的地標和景點，包括新宿御苑，這是一個美麗的皇家花園，供人們休閒散步和欣賞自然美景。此外，新宿還擁有歌舞伎町，這是東京最著名的娛樂區之一，擁有眾多的酒吧、夜店、劇場和娛樂場所，為遊客提供了豐富多彩的夜生活體驗。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. 明治神宮：</td>
+                                            <td>這座神宮於1920年建成，以紀念明治天皇及其皇后昭憲皇太后，並融合了日本傳統的神道文化與自然之美。無論是想要參拜祈福，還是享受片刻的寧靜，明治神宮都是東京旅遊的必訪之地。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. 澀谷：</td>
+                                            <td>被視為代表東京之時尚潮流基地，洋溢著懷舊氛圍的景觀還會在不經意間映入眼簾，澀谷的觀光景點不僅限於地面，可以前往——「澀谷SKY」可以俯瞰整個東京市景。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. 環球影城：</td>
+                                            <td>好評如潮，相比於其他環球影城，加入了很多本土元素。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. 大阪城公園：</td>
+                                            <td>大阪地標，天守閣里有日本國寶。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.  通天閣：</td>
+                                            <td>名偵探柯南取景地，可俯覽整個大阪。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12. 大阪海洋館：</td>
+                                            <td>日本最高規格海洋館，可以看到鯨鯊。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13. 心齋橋：</td>
+                                            <td>大阪最大的商業區，吃喝玩樂應有盡有。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14. 梅田：</td>
+                                            <td>購物、餐飲和娛樂的中心。作為大阪最繁華的地區之一，梅田充滿了現代都市的活力，並且融合了傳統與創新，是遊客不可錯過的景點之一。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15. 湘南海岸：</td>
+                                            <td>在江之島海岸線，漫步感受湘南海岸的風情，再到達鐮倉高校前，拍一組《灌籃高手》同款，再體驗乘坐江之電（連接藤澤至鐮倉的路面電車行經路線含括了鐮倉大部分的著名景點）。</td>
+                                        </tr>
+                                    </table>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>推薦行程:</strong>
+                                            Threads
+                                        </li>
+                                    </ul-->
+
+                                 <!-- 插入空白區域 -->
+                                <div class="spacer" style="height: 50px;"></div>
+                                <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
+                                <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
+                                
+                                <div class="dropdown my-3">
+                                    <label for="city-select-japan">選擇城市：</label>
+                                    <select id="city-select-japan" class="form-control" onchange="clearDestinations('japan')">
+                                        <option value="東京">東京</option>
+                                        <option value="大阪">大阪</option>
+                                    </select>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="label">上午景點</div>
+                                        <div class="box bg-light p-3 border yellow-background">
+                                            <img id="japan-morning-photo" src="" alt="上午景點" class="photo" />
+                                            <div id="japan-morning-label" class="photo-label"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="label">下午景點</div>
+                                        <div class="box bg-light p-3 border yellow-background">
+                                            <img id="japan-afternoon-photo" src="" alt="下午景點" class="photo" />
+                                            <div id="japan-afternoon-label" class="photo-label"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 插入空白區域 -->
+                                <div class="spacer" style="height: 50px;"></div>
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary" onclick="generatePhotos('japan')">隨機生成景點</button>
+                                </div>
+
+                           
+                                  <!-- 插入的功能結束 -->
+                                    <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        回到上一頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- CSS -->
+        <style>
+            .yellow-background {
+                background-color: #f6e58d; /* 淡黃色背景 */
+                padding: 20px;
+                border-radius: 10px;
+                position: relative;
+                width: 100%; /* 容器寬度 */
+                max-width: 350px; /* 最大寬度，適應不同屏幕 */
+                height: 400px; /* 固定高度，防止隨內容變動 */
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* 垂直居中 */
+                align-items: center; /* 水平居中 */
+                margin: auto; /* 保證在大容器中居中顯示 */
+            }
+        
+            .label {
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; /* 垂直排列圖片和標籤 */
+                width: 100%; /* 保證寬度占滿父容器 */
+                height: 100%; /* 保持容器高度固定 */
+            }
+        
+            .photo {
+                width: 100%; /* 確保圖片寬度占滿容器 */
+                height: 70%; /* 圖片高度固定為容器的70% */
+                object-fit: cover; /* 保持圖片比例並填充容器 */
+                border-radius: 8px; /* 為圖片添加圓角 */
+            }
+        
+            .photo-label {
+                font-size: 16px;
+                font-weight: bold; /* 設置字體粗體 */
+                text-align: center;
+                margin-top: 10px;
+                width: 100%; /* 保證標籤的寬度與容器一致 */
+            }
+        </style>
+        
+     
+        
+            
+  
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">韓國</h2>
+                                    <p class="item-intro text-muted">South Korea</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/services/韓國(2).jpg" alt="..." />
+                                    <p>韓國首爾作為一個融合傳統與現代的城市，為大學生提供了豐富多彩的都市體驗。從繁華的購物區到歷史悠久的宮殿，首爾的每個角落都充滿了探索的機會。可以體驗時尚購物文化，找到各種流行的服飾和化妝品，並品嚐到當地美食，如炸雞和辣炒年糕等街頭小吃。這裡充滿了活力與創意，學生們可以參加街頭表演，探索獨立設計商店，或在咖啡館中放鬆，享受悠閒的下午。在這個充滿活力的都市中，大學生們將會度過一段充滿冒險與樂趣的旅程，留下難忘的回憶。</p>
+                                    <h3 class="text-uppercase">【韓國景點必打卡】</h3>
+                                    <table class="table table-striped table-hover table-bordered">
+                                        <tr class="table-primary">
+                                            <th style="width: 150px;">景點</th>
+                                            <th>簡介</th>
+                                        <tr>
+                                            <td>1. 弘大：</td>
+                                            <td>弘大是首爾最好玩、最好逛的地方，也是首爾年輕人逛街、聚會、派對的第一選擇。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. 景福宮：</td>
+                                            <td>首爾市內最古老也最美的宮殿，許多人會穿著韓服免費參觀，也是初訪首爾的必去景點。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. 首爾塔：</td>
+                                            <td>首爾著名的地標性建築，適合欣賞城市全景。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. 北村韓村屋：</td>
+                                            <td>韓國特色民居，離景福宮也不遠。一定要來這邊看日落超級美!</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. 廣藏市場：</td>
+                                            <td>廣藏市場是韓國歷史最悠久、規模最大的傳統市場之一。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. 韓流明星街 K-Star Road：</td>
+                                            <td>在這條長達1km的街上，你會看到各種顏色和圖樣的彩繪小熊雕塑「Gangnamdol」排列成長長一行，他們就是象徵各個K-Pop大團的雕塑～從4minute、東方神起、少女時代一直到FT.Island、EXO、BTS等等，共有17座彩繪小熊等著你來拍照！</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. 新沙洞林蔭大道：</td>
+                                            <td>美麗的景緻與異國感街道使新沙洞相當受到首爾自由行旅客的歡迎!還可以打卡Jennie巨型海報。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. 明洞：</td>
+                                            <td>很多特色小吃還有線下專輯店。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. 星空圖書館：</td>
+                                            <td>高達13呎、延伸到天花板約3層樓高的巨型書架，以及一整片天窗的絕佳採光，白天時明亮舒適；夜晚亮起燈光的書架和掛在天窗上的星月燈飾又為圖書館製造了一種浪漫的童話感。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. 梨泰院：</td>
+                                            <td>是首爾市的一個國際觀光地，以多元異國文化著稱。梨泰院是一個充滿活力和創意的地方，吸引著來自世界各地的遊客，是探索首爾時尚和文化的絕佳去處。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11. 青瓦台：</td>
+                                            <td>韓國總統的辦公地點和官邸，也是對外開放的觀光景點之一。遊客可以參加導覽，參觀官邸的一部分，了解韓國總統的日常生活和政治活動。青瓦臺周邊還有美麗的花園和景觀，是一個放鬆散步和享受自然的好去處。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12. 梨花女子大學：</td>
+                                            <td>簡稱梨大，是許多來到首爾旅遊的旅客必定會來朝聖的韓國名門女子大學！梨大商圈也因為學生多為女性的關係，到處都是很多各式各樣的美妝用品店、女性服飾店、飾品店等等，因而有「女人街」的稱號。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13. 樂天世界：</td>
+                                            <td>樂天世界是位於韓國首爾的大型娛樂設施，它包括一個大型室內主題公園、戶外遊樂園、商場、酒店、韓國民俗村、體育設施、電影院組成的一個領域，之間由單軌鐵路連接；樂天世界室內主題公園是僅次於阿拉伯聯合大公國的阿布達比華納兄弟主題公園及杜拜IMG室內冒險樂園的世界上第三大室內遊樂園。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14. 東大門：</td>
+                                            <td>以其獨特的夜間市場和時尚文化聞名於世，是遊客和當地人喜愛的購物勝地。這裡有許多大型購物中心、專賣店、市場和批發市場，提供著從時裝、配飾到家居用品等各種商品，讓遊客可以盡情購物。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15. 聖水洞：</td>
+                                            <td>爾地鐵聖水站、聖水洞一帶可說是近年來韓國爆紅的景點，從沒落的小工廠區，成功變身充滿文藝氣息與咖啡廳的文青聖地、約會聖地。Cafe Onion、大林倉庫、網美烤肉店Barbecue Boutique都是熱門的聖水洞打卡地標。聖水洞已經成為首爾年輕人心目中最時髦、最有氣質的景點；甚至火紅韓劇《孤單又燦爛的神－鬼怪》以及韓國男團「BIGBANG」的MV都曾在這取景。</td>
+                                        </tr>
+                                    </table>
+                                    <script src="button.js"></script> 
+                                    
+                                    <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
+                                    <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
+                                    <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
+
+                                    <div class="dropdown my-3">
+                                        <label for="city-select-seoul">選擇城市：</label>
+                                        <select id="city-select-seoul" class="form-control" onchange="clearDestinations('seoul')">
+                                            <option value="首爾">首爾</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="label">上午景點</div>
+                                            <div class="box bg-light p-3 border yellow-background">
+                                                <img id="seoul-morning-photo" src="" alt="上午景點" class="photo" />
+                                                <div id="seoul-morning-label" class="photo-label"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="label">下午景點</div>
+                                            <div class="box bg-light p-3 border yellow-background">
+                                                <img id="seoul-afternoon-photo" src="" alt="下午景點" class="photo" />
+                                                <div id="seoul-afternoon-label" class="photo-label"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
+                                    <div class="text-center mt-4">
+                                        <button class="btn btn-primary" onclick="generatePhotos('seoul')">隨機生成景點</button>
+                                    </div>
+                                     <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        回到上一頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">泰國</h2>
+                                    <p class="item-intro text-muted">Thailand</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/services/泰國(2).jpg" alt="..." />
+                                    <p>泰國作為東南亞的寶地，對大學生來說是一個充滿新奇與體驗的絕佳目的地。首先，曼谷作為泰國的首都，融合了現代都市的繁華和傳統文化的魅力。大學生們可以在曼谷的著名景點如大皇宮、寺廟和市場中感受到泰國的豐富文化。而另一個不可錯過的目的地是芭達雅，一個令人心動的海濱度假勝地，擁有絕美的海灘和豐富的水上活動。大學生們可以在芭達雅享受陽光沙灘，參加水上運動，或者探索附近的島嶼和海洋生態。在這個充滿活力和魅力的國家裡，大學生們將會度過一段充滿冒險和樂趣的旅程。</p>
+                                    <h3 class="text-uppercase">【泰國景點必打卡】</h3>
+                                    <table class="table table-striped table-hover table-bordered">
+                                        <tr class="table-primary">
+                                            <th style="width: 150px;">景點</th>
+                                            <th>簡介</th>
+                                        <tr>
+                                            <td>1. 暹羅中心：</td>
+                                            <td>曼谷最繁榮的購物中心，暹羅有超多曼谷必逛百貨公司，是逛街和享受美食的必訪之地。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. 鄭王廟：</td>
+                                            <td>泰國有名的皇家寺廟之一，雕工精緻，外型絕美，有「泰國埃菲爾鐵塔」之稱。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. 四面佛：</td>
+                                            <td>泰國最著名的神龕之一，傳說這座佛非常靈驗，許多遊客來這兒許願。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. 洽圖洽週末市集：</td>
+                                            <td>泰國最大的跳蚤市場，東南亞最大的露天市場。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. 曼谷大皇宮：</td>
+                                            <td>泰國最大的王宮，曾是暹羅王國的皇宮。玉佛寺在皇宮的東北角，泰國最出名的寺廟之一</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. 考山路：</td>
+                                            <td>是曼谷夜生活的代表地，一到晚上這裡就開始人擠人，變成夜生活的天堂。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. 暹羅百麗宮：</td>
+                                            <td>每個購物狂的天堂，座落於曼谷捷運BTS旁，也是OneSiam暹羅商圈三大購物中心的其中之一，為一個熱鬧的購物、美食及旅遊目的地。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. 真理寺：</td>
+                                            <td>芭達雅最大的景點，也是泰國最重要的地標之一。坐落在海灘上，俯瞰大海，當你近距離看到它時，會驚嘆外觀並感到敬畏。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. 格蘭島：</td>
+                                            <td>擁有令人驚嘆的白色沙灘、清澈的海水和繽紛的海底生態，讓遊客可以放鬆身心，享受與大自然的親密接觸。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. Tutu Beach：</td>
+                                            <td>大量的粉紅覽懶骨頭搭配粉紅色大陽傘，形成著名的「粉紅色沙灘」，華麗場面既夢幻且盛大。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.  東芭樂園：</td>
+                                            <td>園內鳥語花香，景色如畫，還有水光瀲灧的人工湖，十分適合休閒和度假，在這裡可以充分感受到泰式民族文化。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12. 水門寺大佛：</td>
+                                            <td>高達20層樓高的純手工製作金色大佛銅像，超巨大佛身在MRT車站遠遠就能看到大佛莊嚴樣態，除了走進寺內親身體驗外，也可以搭船從水路欣賞，從河道遠眺大佛與夕陽，是現在最受歡迎的曼谷行程之一。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13. 臥佛寺：</td>
+                                            <td>曼谷臥佛寺最早建於1788年，是曼谷最古老寺廟之一，院內供奉1000多尊佛像，最重要的是有泰國最大室內釋迦牟尼臥佛像，法相莊嚴金光閃閃，雖然參觀的遊客很多，卻依舊可以感受到廟宇沉穩與莊重的氣息。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14. 唐人街：</td>
+                                            <td>在泰國唐人街，這裡聚集了眾多美食攤販，你可以品嚐到各種美味的中式料理和泰式中國菜，還有許多當地特色小吃和美食街，以其豐富多樣的街頭小吃聞名於世，可以說是泰國人的美食天堂。</td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
+                                    <!-- 插入的功能（選擇城市和隨機生成景點）開始 -->
+                                    <h3 class="text-uppercase ">【隨機產生旅遊景點】</h3>
+
+                                    <div class="dropdown my-3">
+                                        <label for="city-select-thailand">選擇城市：</label>
+                                        <select id="city-select-thailand" class="form-control" onchange="clearDestinations('thailand')">
+                                            <option value="曼谷">曼谷</option>
+                                            <option value="芭達雅">芭達雅</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="label">上午景點</div>
+                                            <div class="box bg-light p-3 border yellow-background">
+                                                <img id="thailand-morning-photo" src="" alt="上午景點" class="photo" />
+                                                <div id="thailand-morning-label" class="photo-label"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="label">下午景點</div>
+                                            <div class="box bg-light p-3 border yellow-background">
+                                                <img id="thailand-afternoon-photo" src="" alt="下午景點" class="photo" />
+                                                <div id="thailand-afternoon-label" class="photo-label"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <!-- 插入空白區域 -->
+                                     <div class="spacer" style="height: 50px;"></div>
+                                    <div class="text-center mt-4">
+                                        <button class="btn btn-primary" onclick="generatePhotos('thailand')">隨機生成景點</button>
+                                    </div>
+                                    <!-- 插入空白區域 -->
+                                    <div class="spacer" style="height: 50px;"></div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        回到上一頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">美國</h2>
+                                    <p class="item-intro text-muted">USA</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/services/LA.jpg" alt="..." />
+                                    <p>美國作為世界上最受歡迎的旅遊目的地之一，擁有眾多令人嚮往的城市和景點，尤其對大學生來說，是一個絕佳的探險之地。而我們這次要推薦的是洛杉磯。洛杉磯是個絕佳的旅遊勝地，這裡有無數的景點和活動適合你的冒險心。洛杉磯擁有陽光明媚的海灘、豐富的文化景點和多樣的娛樂活動，讓你無論是尋求放鬆還是刺激都能找到理想的去處，不僅是一個旅遊勝地，更是一個能激發你靈感和創意的地方。</p>
+                                    <h3 class="text-uppercase">【美國景點必打卡】</h3>
+                                    <table class="table table-striped table-hover table-bordered">
+                                        <tr class="table-primary">
+                                            <th style="width: 150px;">景點</th>
+                                            <th>簡介</th>
+                                        <tr>
+                                            <td>1. 格里菲斯公園：</td>
+                                            <td>提供壯觀的城市和好萊塢標誌的景色，且天文台有迷人的展覽和天文館。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. 好萊塢星光大道：</td>
+                                            <td>可以沿著好萊塢大道漫步，看看鑲嵌在人行道上的著名明星。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. 聖莫尼卡碼頭：</td>
+                                            <td>標誌性的碼頭，擁有遊樂園、水族館和美麗的海景。是享受海灘輕鬆一天的好去處。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. 洛杉磯郡立美術館 ：</td>
+                                            <td>西部最大的藝術博物館，收藏了來自各個時期和文化的廣泛藝術品。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. 環球影城好萊塢：</td>
+                                            <td>電影製片廠和主題公園，提供令人興奮的遊樂設施、表演，以及電影製作的幕後一瞥。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. 羅迪歐大道：</td>
+                                            <td>比佛利山著名的購物街，以豪華精品店和高端時尚聞名。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. 威尼斯海灘：</td>
+                                            <td>充滿活力和獨特的海濱，以其波希米亞精神、肌肉海灘和充滿活力的木板路著稱。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. 好萊塢標誌：</td>
+                                            <td>娛樂業的象徵，從格里菲斯公園或周圍的小徑上遠足是最佳觀賞方式。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. 沃爾特·迪士尼音樂廳：</td>
+                                            <td>由弗蘭克·蓋里設計的建築奇蹟，洛杉磯愛樂樂團的所在地。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. 拉布雷亞瀝青坑：</td>
+                                            <td>一個獨特的地點，天然瀝青保存了史前化石，你可以看到古生物學家在工作。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11. 洛杉磯動物園：</td>
+                                            <td>位於格里菲斯公園，擁有各種各樣的動物和美麗的植物收藏。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12. 馬里布：</td>
+                                            <td>以其美麗的海灘如祖馬海灘和厄爾馬塔多爾海灘以及風景優美的海岸線駕車而聞名。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13. 洛杉磯市中心藝術區：</td>
+                                            <td>一個充滿街頭藝術、畫廊、時尚餐廳和獨特商店的充滿活力的街區。</td>
+                                        </tr>
+                                    </table>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        回到上一頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">法國</h2>
+                                    <p class="item-intro text-muted">France</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/services/法國(2).jpg" alt="..." />
+                                    <p>法國是一個充滿藝術、歷史和美食的國家，對於大學生來說，是一個極具吸引力的旅遊目的地。巴黎作為法國的首都和浪漫之都，讓大學生們可以沉浸在浪漫的氛圍中，探索著名的地標如艾菲爾鐵塔、巴黎聖母院和羅浮宮。他們可以漫步在塞納河畔，品味法式美食，參加夜間郊區派對，感受巴黎的獨特魅力。無論你是追尋浪漫、探索文化，還是尋找美食和娛樂，巴黎都能滿足你的需求，成為一段難忘的大學生活經歷。</p>
+                                    <h3 class="text-uppercase">【法國景點必打卡】</h3>
+                                    <table class="table table-striped table-hover table-bordered">
+                                        <tr class="table-primary">
+                                            <th style="width: 150px;">景點</th>
+                                            <th>簡介</th>
+                                        <tr>
+                                            <td>1. 艾菲爾鐵塔：</td>
+                                            <td>法國巴黎的標誌性建築之一，也是世界上最知名的建築物之一。艾菲爾鐵塔不僅是一個觀光景點，也是一個文化和歷史的象徵。遊客可以登上艾菲爾鐵塔的不同觀景台，俯瞰巴黎市景，感受壯觀的景色和浪漫的氛圍。無論是白天還是夜晚，艾菲爾鐵塔都以其雄偉的身姿吸引著無數遊客的目光，成為了巴黎的象徵之一。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. 羅浮宮：</td>
+                                            <td>是世界上最著名的美術館之一，也是法國最具代表性的文化遺產之一。它擁有龐大且珍貴的藝術收藏且本身也是一件藝術品，它的建築風格融合了古典主義和新古典主義的元素，是一座壯麗而宏偉的建築。它不僅是一個藝術寶庫，也是一個文化標誌，吸引著來自世界各地的遊客前來參觀和欣賞。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. 杜樂麗花園：</td>
+                                            <td>這是一個非常可愛且超大的花園，是散步或野餐的完美場所。這裡有很多椅子，你可以和朋友一起坐在那裡享受時光。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. 橘園美術館：</td>
+                                            <td>藏有 20 世紀歐洲藝術品的博物館，展有 8 幅莫內的《睡蓮》壁畫。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. 聖心堂：</td>
+                                            <td>這座教堂是一個令人印象深刻的地標，免費參觀。支付額外費用後，可以登頂欣賞巴黎的壯麗景色。最佳參觀時間是清晨，可以觀看日出並避開人群。白天會非常擁擠，並且可能會遇到街頭小販。但要注意，他們可能會積極推銷商品。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. 巴黎歌劇院：</td>
+                                            <td>歌劇院內部美得令人驚嘆。雖然你仍然可以享受表演，但要注意門票可能相當昂貴。如果你想參觀歌劇院，可以購買約10-15歐元的門票。我相信值得一遊，因為內部真的令人印象深刻，還有各種收藏品展出。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. 凱旋門：</td>
+                                            <td>凱旋門是巴黎最著名的地標之一。凱旋門向在法國法國大革命和拿破崙戰爭中為法國而戰並犧牲的人致敬。你可以在柱子上看到每個人的名字。在它的拱頂下面是第一次世界大戰的無名戰士墓。此外，你還可以登上凱旋門，從上面欣賞美妙的景色，還可以看到艾菲爾鐵塔。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. 瑪摩丹美術館：</td>
+                                            <td>收藏著大量的莫內畫作及其他印象派畫家作品。他們還展示了世界上最著名的畫作之一《印象·日出》</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. 巴黎地下墓穴：</td>
+                                            <td>這是一個非常酷的地方，但也有點令人毛骨悚然。他們在裡面提供音頻導覽，或者整個地方也有介紹。隧道非常大而長，所以你需要一點時間。另一個很酷的事情是你從入口進去，但出口卻在巴黎的另一邊。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. 先賢祠：</td>
+                                            <td>位於巴黎拉丁區的一座宏偉建築，它展示了許多畫作。此外，你可以登上觀景台欣賞迷人的景色，但每天的名額有限，所以最好提前預訂門票。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11. 聖徒禮拜堂：</td>
+                                            <td>聖禮拜堂是哥特式風格的皇家禮拜堂，位於中世紀的西堡宮，直到14世紀是法國國王的住所。對於25歲以下的歐洲學生是免費的。玻璃主要是紫色的，給人一種莊重的氛圍。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12. 巴黎聖母院：</td>
+                                            <td>目前正在施工中，因為2019年的火災。大教堂令人驚嘆的彩色玻璃窗、精緻的石雕和高聳的尖塔，高達100米以上，吸引了全世界數百萬人的目光。周圍有許多咖啡館。即使我們現在無法參觀內部，坐在附近欣賞景色也是非常放鬆的。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13. 瑪萊區：</td>
+                                            <td>區域內四處都是時尚精品店、藝廊和同志酒吧。這裡的氛圍，非常輕鬆，價格也不會太貴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14. 巴黎大堂：</td>
+                                            <td>這個地方有點混亂，有很多奇怪的人和戲劇，但它也有一個非常大的購物中心，附近有很多咖啡館和餐廳。這是和朋友們一起出去的好地方。而且它的位置正好位於城市的中心，連接著幾條地鐵線和火車線。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15. 巴黎迪士尼樂園：</td>
+                                            <td>它其實並不在巴黎，但去那裡非常容易。如果你喜歡迪士尼樂園，我認為值得去。特別是煙火和燈光秀。</td>
+                                        </tr>
+                                    </table>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        回到上一頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">義大利</h2>
+                                    <p class="item-intro text-muted">Italy</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/services/義大利(2).jpg" alt="..." />
+                                    <p>義大利是一個融合了歷史、藝術和美食的國家，對大學生來說是一個迷人的旅遊目的地。當你想到義大利，腦海中可能會浮現出米蘭和羅馬這兩座城市的畫面。它們代表了這個國家的兩個截然不同的面貌，但同時又共同組成了義大利文化的多樣性與深度。米蘭象徵著現代與時尚，羅馬則是歷史與傳統的代名詞。無論你是尋求當代的活力，還是渴望沉浸於古老文明的遺產，這兩座城市都將為你提供難忘的體驗。</p>
+                                    <h3 class="text-uppercase">【義大利景點必打卡】</h3>
+                                    <table class="table table-striped table-hover table-bordered">
+                                        <tr class="table-primary">
+                                            <th style="width: 150px;">景點</th>
+                                            <th>簡介</th>
+                                        <tr>
+                                            <td>1. 米蘭大教堂：</td>
+                                            <td>這是米蘭的主教堂，規模非常龐大，令人驚艷。教堂內部也很寬敞。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. 埃馬努埃萊二世長廊：</td>
+                                            <td>這是一個高檔購物區，這裡非常漂亮，適合拍照，而且就位於大教堂旁邊。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. 布雷拉畫廊：</td>
+                                            <td>布雷拉畫廊是米蘭主要的公共美術館，這裡展出了許多繪畫和雕塑作品</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. 聖瑪利亞感恩教堂：</td>
+                                            <td>這裡是《最後的晚餐》壁畫的所在地。如果你想參觀，記得提前幾個月購買門票，否則你可能無法看到這件傑作。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. 森皮奧內公園：</td>
+                                            <td>森皮奧內公園位於米蘭歷史中心，是一個大型城市公園，非常適合野餐，風景也非常優美。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. 聖安布羅西奧大教堂：</td>
+                                            <td>聖安布羅西奧大教堂是一座位於米蘭市中心的古老羅馬式天主教堂，規模較小。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. 納維利：</td>
+                                            <td>這裡是米蘭的酒吧和美食區，附近還有很多商店，非常適合下班後與朋友一起來放鬆。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. 科莫湖：</td>
+                                            <td>科莫湖位於米蘭外，湖泊的景色十分壯麗，是必遊之地。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. 羅馬競技場：</td>
+                                            <td>羅馬競技場是古羅馬最具代表性的建築之一，擁有近2000年的歷史。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. 西斯汀小堂：</td>
+                                            <td>位於梵蒂岡城的西斯汀小堂因米開朗基羅的天頂壁畫《創世紀》和後牆的《最後的審判》而聞名於世。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11. 納沃納廣場：</td>
+                                            <td>一座充滿活力和歷史氣息的廣場，擁有巴洛克時期的優美建築和三座壯麗的噴泉。廣場的中心是貝尼尼的四河噴泉，象徵四大河流。這裡也是享受戶外咖啡、街頭藝術表演和感受羅馬日常生活的理想地點。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12. 特雷維噴泉：</td>
+                                            <td>其壯觀的設計和浪漫的傳說吸引著無數遊客。傳說丟一枚硬幣入噴泉，便能再度回到羅馬。這座巴洛克風格的傑作不僅是藝術的象徵，也是愛與希望的象徵。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13. 古羅馬廣場：</td>
+                                            <td>古羅馬政治、經濟和宗教生活的中心，曾是帝國權力與榮耀的象徵。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14. 聖伯多祿大殿：</td>
+                                            <td>天主教會最重要的教堂之一，坐落於梵蒂岡城。它以其巨大的圓頂、豐富的藝術品和壯麗的內部設計而聞名。</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15. 梵蒂岡博物館：</td>
+                                            <td>收藏了大量無價的藝術品和古代文物，展現了數個世紀的文化和藝術精華。這裡的亮點包括西斯汀小堂的壁畫、拉斐爾房間、以及無數古希臘和羅馬雕塑。</td>
+                                        </tr>
+                                    </table>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        回到上一頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            // 東京景點的圖片資料
+            const tokyoSpots = [
+                { name: "東京鐵塔", url: "https://image.cdn-eztravel.com.tw/uz5KtlA2k7OmPkWmc0Y-ZWvKJ-P2yIBgz_X9OoFICls/g:ce/aHR0cDovL3ZhY2F0aW9uLmNkbi1lenRyYXZlbC5jb20udHcvcG9pL2pwL1RZTy9Ub2t5byBUb3dlci9zaHV0dGVyc3RvY2tfMTI5NjExMjI1X1I2MDAuanBn.jpg" },
+                { name: "淺草寺", url: "https://images.pexels.com/photos/6493197/pexels-photo-6493197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+                { name: "上野公園", url: "https://s3-ap-northeast-1.amazonaws.com/thegate/2020/12/03/13/02/33/Ueno%20park.jpg" },
+                { name: "秋葉原", url: "https://prd-static.gltjp.com/glt/data/article/21000/20306/20230428_135124_b546c095_w1920.webp" },
+                { name: "銀座", url: "https://prd-static.gltjp.com/glt/data/article/21000/20273/20230212_104730_44fb136a_w1920.webp" },
+                { name: "新宿", url: "https://mimihan.tw/wp-content/uploads/20240109112501_0.jpg" },
+                { name: "澀谷", url: "https://prd-static.gltjp.com/glt/data/article/21000/20511/20231107_090403_c364e3e1_w1920.webp" },
+                { name: "明治神宮", url: "https://live.staticflickr.com/7176/7048008687_2329b3814a_b.jpg" },
+                { name: "湘南海岸", url: "https://tenjo.tw/wp-content/uploads/JAP_0876.jpg" }
+            ];
+        
+            // 大阪景點的圖片資料
+            const osakaSpots = [
+                { name: "環球影城", url: "https://www.hotelscombined.com.tw/news/wp-content/uploads/sites/316/2018/10/1-1.jpg" },
+                { name: "大阪城公園", url: "https://www.kkday.com/zh-my/blog/wp-content/uploads/%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%98%AA%E5%9F%8E%E5%85%AC%E5%9B%AD5.jpg" },
+                { name: "通天閣", url: "https://chictirpstorageprod.blob.core.windows.net/poi/c12a0b94-529e-4012-9832-54151e73fdeb.jpg" },
+                { name: "大阪海洋館", url: "https://www.e-japannavi.com/syuyu/osaka/images/bayarea_kaiyukan_img700465_01.jpg" },
+                { name: "心齋橋", url: "https://www.funtime.com.tw/blog/wp-content/uploads/2020/09/413.jpg" },
+                { name: "梅田", url: "https://resources.matcha-jp.com/resize/720x2000/2024/02/27-169315.webp" }
+            ];
+            const seoulSpots = [
+                { name: "弘大", url: "https://blog.asiayo.com/wp-content/uploads/pasted-image-0-10.png" },
+                { name: "景福宮", url: "https://www.kkday.com/zh-tw/blog/wp-content/uploads/P1320052.jpg" },
+                { name: "首爾塔", url: "https://www.kkday.com/zh-tw/blog/wp-content/uploads/Korea_Seoul_N-Seoul-Tower_Ashutterstock_304517012.jpg" },
+                { name: "北村韓村屋", url: "https://gokorea.com.tw/wp-content/uploads/2023/03/121080204_m_normal_none.jpg" },
+                { name: "廣藏市場", url: "https://www.bring-you.info/wp-content/uploads/2019/02/gwangjang-market-33-900x531.jpg" },
+                { name: "新沙洞林蔭大道", url: "https://www.bring-you.info/wp-content/uploads/2018/11/seoul-travel-7.jpg" },
+                { name: "明洞", url: "https://cf.creatrip.com/original/blog/4550/dfqaeraw.jpg?d=1300x700&q=75&f=webp" },
+                { name: "星空圖書館", url: "https://i2.wp.com/banbi.tw/wp-content/uploads/20180304165957_42.jpg" },
+                { name: "梨泰院", url: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/343000/343572-Itaewon.jpg" },
+                { name: "青瓦台", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxUL_6VIXM9dPjRBB8bq68INSnDPI6ELMTw&s" },
+                { name: "梨花女子大學", url: "https://lh4.googleusercontent.com/proxy/gp0MnhyXocUpOn7BKPTD2-E_0YKK_Zk6Z9YypdPJ56Xd2ti3YvHvDpt7lJv6V-GrRpuoZaku67gKoCV7JRmZwPATUmkgJorNa-e2zHDv5kiA81oWIolFgWKlZWcr" },
+                { name: "樂天世界", url: "https://www.kkday.com/zh-hk/blog/wp-content/uploads/jpeg-11.jpg" },
+                { name: "東大門", url: "https://bobby.tw/wp-content/uploads/pixnet/707a3165baa46ae58ec09a213faf81fc.jpg" },
+                { name: "聖水洞", url: "https://icable-prod.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2022/08/19172751/dior.jpg" },
+                { name: "韓流明星街 K-Star Road", url: "https://www.hanchao.com/varimg/photogallery/Article_Photo/13134/big_233511.jpg" }
+            ];
+            
+            // 曼谷和芭達雅的景點資料
+            const bangkokSpots = [
+                { name: "暹羅中心", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__PI5ENoDTs6oSbCiiqS3goe504IoDFx83g&s" },
+                { name: "鄭王廟", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFGH7YAGkRh6CoW8K5MHylCyhTX-v84NMFw&s" },
+                { name: "四面佛", url: "https://www.sicthailand.com/wp/wp-content/uploads/2020/02/TB26qs0chhmpuFjSZFyXXcLdFXa_0-travel.jpg" },
+                { name: "洽圖洽週末市集", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxxqeYCsYFuN5DG9YyT9xMqNGcmfA4hQKNw&s" },
+                { name: "曼谷大皇宮", url: "https://i0.wp.com/travo.guide/wp-content/uploads/2019/12/Royal-Grand-Palace-Bangkok-Tour-Half-Day1.jpg?fit=1280%2C720&ssl=1" },
+                { name: "考山路", url: "https://gothailand.com.tw/wp-content/uploads/2023/04/139686671_m_normal_none-1024x683.jpg" },
+                { name: "暹羅百麗宮", url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/d7/7c/c2/apply-tourist-card-to.jpg?w=1200&h=-1&s=1" },
+                { name: "水門寺大佛", url: "https://blog.hamibook.com.tw/wp-content/uploads/2022/11/%E9%8F%A1%E9%80%B1%E5%88%8A%E7%AC%AC321%E6%9C%9F_%E6%9B%BC%E8%B0%B7_00.jpg" },
+                { name: "臥佛寺", url: "https://media.istockphoto.com/id/467571456/zh/%E7%85%A7%E7%89%87/reclining-buddha-wat-pho-temple-bangkok-thailand.jpg?s=612x612&w=0&k=20&c=UlLj7B-xoILP501Fj_r1Cu3yzfGvc3ADaRdJntHnkDM=" },
+                { name: "唐人街", url: "https://www.agoda.com/wp-content/uploads/2024/07/Bangkok-Yaowarat-Featured-1244x700.jpg" }
+            ];
+
+            const pattayaSpots = [
+                { name: "真理寺", url: "https://image.kkday.com/v2/image/get/w_960%2Cc_fit%2Cq_55%2Ct_webp/s1.kkday.com/product_7313/20170905113940_ebUHc/jpg" },
+                { name: "格蘭島", url: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/10/61/b3/9c.jpg" },
+                { name: "Tutu Beach", url: "https://networkwatcherrgvnetdiag.blob.core.windows.net/gds-blob/production/products/03411134-909d-47ff-8abc-3db6d55945f6/7.jpg" },
+                { name: "東芭樂園", url: "https://baofamily.tw/wp-content/uploads/2023/09/%E6%9D%B1%E8%8A%AD%E6%A8%82%E5%9C%92-Nong-Nooch-Village-70.jpg" }
+            ];
+            
+            // 更新的清空景點函數
+            function clearDestinations(prefix) {
+                const morningPhoto = document.getElementById(`${prefix}-morning-photo`);
+                const afternoonPhoto = document.getElementById(`${prefix}-afternoon-photo`);
+                const morningLabel = document.getElementById(`${prefix}-morning-label`);
+                const afternoonLabel = document.getElementById(`${prefix}-afternoon-label`);
+
+                if (morningPhoto) {
+                    morningPhoto.style.display = "none";
+                    morningPhoto.src = "";
+                }
+                if (afternoonPhoto) {
+                    afternoonPhoto.style.display = "none";
+                    afternoonPhoto.src = "";
+                }
+                if (morningLabel) morningLabel.style.display = "none";
+                if (afternoonLabel) afternoonLabel.style.display = "none";
+            }
+
+            // 通用的隨機生成景點函數
+            function generatePhotos(prefix) {
+                let spots = [];
+                if (prefix === 'japan') {
+                    const city = document.getElementById('city-select-japan').value;
+                    spots = city === '東京' ? tokyoSpots : osakaSpots;
+                } else if (prefix === 'seoul') {
+                    spots = seoulSpots;
+                } else if (prefix === 'thailand') {
+                    const city = document.getElementById('city-select-thailand').value;
+                    spots = city === '曼谷' ? bangkokSpots : pattayaSpots;
+                }
+
+                if (spots.length > 0) {
+                    const morningSpot = spots[Math.floor(Math.random() * spots.length)];
+                    let afternoonSpot;
+                    do {
+                        afternoonSpot = spots[Math.floor(Math.random() * spots.length)];
+                    } while (afternoonSpot.url === morningSpot.url);
+
+                    const morningPhoto = document.getElementById(`${prefix}-morning-photo`);
+                    const afternoonPhoto = document.getElementById(`${prefix}-afternoon-photo`);
+
+                    morningPhoto.src = morningSpot.url;
+                    morningPhoto.alt = morningSpot.name;
+                    morningPhoto.style.display = "block";
+                    document.getElementById(`${prefix}-morning-label`).innerText = morningSpot.name;
+                    document.getElementById(`${prefix}-morning-label`).style.display = "block";
+
+                    afternoonPhoto.src = afternoonSpot.url;
+                    afternoonPhoto.alt = afternoonSpot.name;
+                    afternoonPhoto.style.display = "block";
+                    document.getElementById(`${prefix}-afternoon-label`).innerText = afternoonSpot.name;
+                    document.getElementById(`${prefix}-afternoon-label`).style.display = "block";
+                }
+            }
+
+
+            // 當日本 modal 打開時清空景點
+            document.getElementById('portfolioModal1').addEventListener('show.bs.modal', function () {
+                console.log('Japan modal is opened.clearDestinations()');
+                clearDestinations('japan');
+            });
+
+            // 當首爾 modal 打開時清空景點
+            document.getElementById('portfolioModal2').addEventListener('show.bs.modal', function () {
+                console.log('Seoul modal is opened.clearDestinations()');
+                clearDestinations('seoul');
+            });
+            // 當泰國 modal 打開時清空圖片
+            document.getElementById('portfolioModal3').addEventListener('show.bs.modal', function () {
+                clearDestinations('thailand');
+            });
+
+        </script>
+
+    </body>
+</html>
